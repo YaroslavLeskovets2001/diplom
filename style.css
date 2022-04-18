@@ -1,7 +1,7 @@
 .upper-panel {
     display: flex;
     height: 60px;
-    background-color: blue;
+    background: linear-gradient(blue, #f5f7ff);
     justify-content: flex-end;
 }
 
@@ -9,6 +9,10 @@
     display: flex;
     align-items: center;
     margin-right: 5%;
+}
+
+.test {
+    display: none;
 }
 
 .ico__img {
@@ -25,17 +29,49 @@
 
 .main__header {
     display: flex;
-    margin: 20px 0 0 5%;
     font: normal normal normal 46px/42px Ubuntu;
     height: 60px;
-    width: 690px;
+    width: auto;
 }
 
 a:first-child {
     color:black;
 }
 
+.main {
+    height: 90%;
+    margin: 20px 0 0 5%;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header"
+                         "description pages";
+}
+
+.main__header { 
+    grid-area: header;
+}
+
 .main__info-course {
-    width: 90%;
+    grid-area: description;
+}
+
+.main__course-pages {
+    grid-area: pages;
     margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__info-course:nth-child(odd) {
+    margin-bottom: 5%;
+}
+
+.footer-body {
+    display: block;
+    border-top: 1px solid black;
+}
+
+.footer-body__content {
+    margin-top: 1%;
 }
