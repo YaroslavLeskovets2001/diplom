@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     margin: 0;
 }
 
@@ -48,7 +47,6 @@ a:first-child {
 }
 
 .main {
-    height: 80%;
     padding: 20px 0 0 5%;
     display: grid;
     grid-template-columns: 70% 20%;
@@ -63,7 +61,7 @@ a:first-child {
 
 .main__info-course {
     grid-area: description;
-    display: none;
+    display: block;
 }
 
 .main__course-pages {
@@ -90,5 +88,18 @@ a:first-child {
 }
 
 .main__first-page { 
+    display: none;
     grid-area: description;
+}
+
+.course-pages__button-page {
+    cursor: pointer;
+}
+
+.main__second-page {
+    display: none;
+}
+
+.main__third-page { 
+    display: none;
 }
