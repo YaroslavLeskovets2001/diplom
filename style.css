@@ -47,6 +47,7 @@ a:first-child {
 }
 
 .main {
+    height: 850px;
     padding: 20px 0 0 5%;
     display: grid;
     grid-template-columns: 70% 20%;
