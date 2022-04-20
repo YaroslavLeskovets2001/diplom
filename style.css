@@ -95,6 +95,7 @@ a:first-child {
 
 .course-pages__button-page {
     cursor: pointer;
+    margin-top: 25px;
 }
 
 .main__second-page {
