@@ -121,8 +121,13 @@ a:first-child {
 .button-test {
     width: 140px;
     height: 40px;
-    margin: auto auto 20px; 
     background-color: #59d979;
     border: 0;
     border-radius: 10px;
+}
+
+.block-test {
+    width: 140px;
+    height: 40px;
+    margin: auto auto 20px;
 }
