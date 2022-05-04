@@ -130,4 +130,5 @@ a:first-child {
     width: 140px;
     height: 40px;
     margin: auto auto 20px;
+    display: none;
 }

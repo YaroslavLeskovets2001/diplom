@@ -16,6 +16,7 @@ const test = (event) => {
     buttonsChapter.style.color = 'black';
     const button = event.target;
         if (buttonId || buttonId === 0) {
+            buttonTest.style.display = 'none'
             introduction.style.display = 'none';
             firstChapter.style.display = 'none';
             secondChapter.style.display = 'none';
@@ -26,27 +27,33 @@ const test = (event) => {
         if(buttonId === 1) {
             firstChapter.style.display = 'block';
             buttonTest.id = '0';
+            buttonTest.style.display = 'block'
             localStorage.setItem('actualPage', 0);
         } 
         else if (buttonId === 0)  introduction.style.display = 'block';
         else if (buttonId === 2)  {
             secondChapter.style.display = 'block';
+            buttonTest.style.display = 'block'
             localStorage.setItem('actualPage', 1);
         }
         else if (buttonId === 3)  {
             thirdChapter.style.display = 'block';
+            buttonTest.style.display = 'block'
             localStorage.setItem('actualPage', 2);
         }
         else if (buttonId === 4)  {
             fourthChapter.style.display = 'block';
+            buttonTest.style.display = 'block'
             localStorage.setItem('actualPage', 3);
         }
         else if (buttonId === 5)  {
             fivethChapter.style.display = 'block';
+            buttonTest.style.display = 'block'
             localStorage.setItem('actualPage', 4);
         }
         else if (buttonId === 6)  {
             chapterSixth.style.display = 'block';
+            buttonTest.style.display = 'block'
             localStorage.setItem('actualPage', 5);
         }
 }
