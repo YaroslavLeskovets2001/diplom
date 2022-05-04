@@ -6,8 +6,8 @@ const thirdChapter = document.querySelector('.main__third-page');
 const fourthChapter = document.querySelector('.main__fourth-page');
 const fivethChapter = document.querySelector('.main__fiveth-page');
 const buttonsChapter = document.querySelector('.course-pages__button-page');
-const chapterSixth = document.querySelector('.main__sixth-page')
-
+const chapterSixth = document.querySelector('.main__sixth-page');
+const buttonTest = document.querySelector('.block-test')
 
 
 const test = (event) => {
@@ -23,14 +23,32 @@ const test = (event) => {
             fourthChapter.style.display = 'none';
             fivethChapter.style.display = 'none';
             chapterSixth.style.display = 'none';
-        if(buttonId === 1) firstChapter.style.display = 'block'; 
+        if(buttonId === 1) {
+            firstChapter.style.display = 'block';
+            buttonTest.id = '0';
+            localStorage.setItem('actualPage', 0);
+        } 
         else if (buttonId === 0)  introduction.style.display = 'block';
-        else if (buttonId === 2)  secondChapter.style.display = 'block';
-        else if (buttonId === 3)  thirdChapter.style.display = 'block';
-        else if (buttonId === 4)  fourthChapter.style.display = 'block';
-        else if (buttonId === 5)  fivethChapter.style.display = 'block';
-        else if (buttonId === 6)  chapterSixth.style.display = 'block';
+        else if (buttonId === 2)  {
+            secondChapter.style.display = 'block';
+            localStorage.setItem('actualPage', 1);
+        }
+        else if (buttonId === 3)  {
+            thirdChapter.style.display = 'block';
+            localStorage.setItem('actualPage', 2);
+        }
+        else if (buttonId === 4)  {
+            fourthChapter.style.display = 'block';
+            localStorage.setItem('actualPage', 3);
+        }
+        else if (buttonId === 5)  {
+            fivethChapter.style.display = 'block';
+            localStorage.setItem('actualPage', 4);
+        }
+        else if (buttonId === 6)  {
+            chapterSixth.style.display = 'block';
+            localStorage.setItem('actualPage', 5);
+        }
 }
 };
-
 header.addEventListener('click', test);

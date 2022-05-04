@@ -8,6 +8,12 @@ textResult = document.querySelector('.result-text')
 blockHeader = document.querySelector('.main__header')
 
 
+const actualPage = Number(localStorage.getItem('actualPage'))
+
+const allQuestions = {
+    firstPage: []
+}
+
 const questions = [
     'Какой вид компьютеров предназначен для решения различных задач типы которых не оговариваются:',
     'Какой вид компьютеров служит для решения более узкого круга задач, связанных, как правило, с управлением технологическими объектами, регистрацией, накоплением и обработкой небольших объемов данных, выполнением расчетов по несложным правилам:',
@@ -19,6 +25,8 @@ const questions = [
     'Какие по числу пользователей могут быть МикроЭВМ?',
     'По конструктировным особенностям Пк делятся на…',
     'Типовая конфигурация Пк включает в себя',
+
+
 ];
 const answers = [
     'Универсальный', 'Проблемно ориентированные', 'Специализированный',
@@ -68,7 +76,5 @@ const moveToNextQuestion = (e) => {
         }
     }
 };
-
 render()
-
 answersButton.addEventListener('click', moveToNextQuestion)
