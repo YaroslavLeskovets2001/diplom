@@ -9,7 +9,7 @@ blockHeader = document.querySelector('.main__header')
 
 
 const actualPage = Number(localStorage.getItem('actualPage'))
-console.log(actualPage)
+
 const allQuestions = {
     firstPage: [
     'Какой вид компьютеров предназначен для решения различных задач типы которых не оговариваются:',

@@ -11,7 +11,6 @@ const buttonTest = document.querySelector('.block-test')
 
 
 const test = (event) => {
-    console.log(event.target)
     let buttonId = Number(event.target.id);
     buttonsChapter.style.color = 'black';
     const button = event.target;
