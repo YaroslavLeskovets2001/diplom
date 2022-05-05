@@ -77,6 +77,7 @@ a:first-child {
 }
 
 .footer-body {
+    margin-top: 15px;
     display: block;
     border-top: 1px solid black;
     padding: 10px 0 0 5%;
