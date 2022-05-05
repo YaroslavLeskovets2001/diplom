@@ -1,15 +1,15 @@
-firstAnswer = document.querySelector('.first-text');
-secondAnswer = document.querySelector('.second-text');
-thirdAnswer = document.querySelector('.third-text');
-answersButton = document.querySelector('.list');
-questionText = document.querySelector('.question');
-blockResult = document.querySelector('.result')
-textResult = document.querySelector('.result-text')
-blockHeader = document.querySelector('.main__header')
-
+const firstAnswer = document.querySelector('.first-text');
+const secondAnswer = document.querySelector('.second-text');
+const thirdAnswer = document.querySelector('.third-text');
+const answersButton = document.querySelector('.list');
+const questionText = document.querySelector('.question');
+const blockResult = document.querySelector('.result')
+const textResult = document.querySelector('.result-text')
+const blockHeader = document.querySelector('.main__header')
+const username = document.querySelector('.profile__name');
 
 const actualPage = Number(localStorage.getItem('actualPage'))
-
+username.innerHTML = localStorage.getItem('username')
 const allQuestions = {
     firstPage: [
     'Какой вид компьютеров предназначен для решения различных задач типы которых не оговариваются:',

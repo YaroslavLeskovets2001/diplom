@@ -8,8 +8,10 @@ const fivethChapter = document.querySelector('.main__fiveth-page');
 const buttonsChapter = document.querySelector('.course-pages__button-page');
 const chapterSixth = document.querySelector('.main__sixth-page');
 const buttonTest = document.querySelector('.block-test')
+const username = document.querySelector('.profile__name')
 
 
+username.innerHTML = localStorage.getItem('username')
 const test = (event) => {
     let buttonId = Number(event.target.id);
     buttonsChapter.style.color = 'black';
