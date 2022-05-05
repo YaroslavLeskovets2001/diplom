@@ -1,0 +1,57 @@
+/* .main__login {
+    display: flex
+} */
+
+body {
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 520px;
+    max-height: 292px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #b0e5eb;
+    padding: 5px 0 10px;
+    
+}
+
+.main__login {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__button {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.button-in {
+    margin-right: 50px;
+    
+}
+
+.main__authorization-field {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 350px;
+}
+
+.login {
+    margin-top: 5px;
+}
+
+.password-text {
+    margin-top: 20px;
+}
+
+.password {
+    margin-top: 5px;
+}
