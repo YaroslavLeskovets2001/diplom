@@ -1,12 +1,14 @@
-body {
+.body {
     margin: 0;
+    background-color: beige;
 }
 
 .upper-panel {
     display: flex;
     height: 60px;
-    background: linear-gradient(blue, #f5f7ff);
+    background: linear-gradient(blue, beige);
     justify-content: flex-end;
+    align-items: center;
 }
 
 .profile {
@@ -60,9 +62,14 @@ a:first-child {
     grid-area: header;
 }
 
+.img-intro {
+    margin: 10px auto 0;
+}
+
 .main__info-course {
     grid-area: description;
     display: block;
+    font-size: 1.3em;
 }
 
 .main__course-pages {
@@ -71,6 +78,8 @@ a:first-child {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .main__info-course:nth-child(odd) {
@@ -79,10 +88,8 @@ a:first-child {
 .footer-body {
     margin-top: 15px;
     display: block;
-    border-top: 1px solid black;
     padding: 10px 0 0 5%;
-    border-color: #6378ec;
-    background: linear-gradient(#f5f7ff, #6378ec);
+    background: linear-gradient(beige, #6378ec);
 }
 
 .footer-body__content {
@@ -97,6 +104,13 @@ a:first-child {
 .course-pages__button-page {
     cursor: pointer;
     margin-top: 25px;
+    width: 220px;
+    /* background-color: black;
+    background-color: #71daf5;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px; */
 }
 
 .main__second-page {

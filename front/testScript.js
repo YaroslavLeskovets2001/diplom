@@ -170,7 +170,7 @@ const moveToNextQuestion = (e) => {
             answersButton.style.display = 'none'
             blockHeader.style.display = 'none'
             blockResult.style.display = 'flex'
-            textResult.innerHTML = `Вы ответили правильно на ${counterTrueAnswer} вопросов, поздраваляем!`
+            textResult.innerHTML = `Вы ответили правильно на ${counterTrueAnswer} вопросов, поздравляем!`
         }
     }
 };

@@ -1,12 +1,22 @@
-body {
+.body {
+    background-color: beige;
     margin: 0;
+}
+
+span {
+    font-size: 1.2em;
+}
+
+.main { 
+    margin-left: 20px;
 }
 
 .upper-panel {
     display: flex;
     height: 60px;
-    background: linear-gradient(blue, #f5f7ff);
-    justify-content: flex-end;
+    background: linear-gradient(blue, beige);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .profile {
@@ -40,7 +50,7 @@ body {
     width: 640px;
     height: 30px;
     margin-bottom: 20px;
-    background-color: #ccf7ff;
+    background-color: #8281f742;
     padding-left: 10px;
     align-items: center;
     cursor: pointer;
@@ -65,4 +75,20 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
+}
+
+.footer-body {
+    margin-top: 15px;
+    display: block;
+    padding: 10px 0 0 5%;
+    background: linear-gradient(beige, #6378ec);
+}
+
+.upper-panel__button-content-main-page {
+    margin-left: 20px;
+    /* width: 165px;
+    height: 40px;
+    background-color: #59d979;
+    border: 0;
+    border-radius: 10px; */
 }
